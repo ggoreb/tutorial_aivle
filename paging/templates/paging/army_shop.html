@@ -17,4 +17,15 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </tr>
     {% endfor %}
 </table>
+<div style='text-align:center;'>
+    <ul class='pagination'>
+    {% for i in page_range %}
+    <li>
+    <a href='{% url "paging:army_shop" %}?page={{ i }}'>
+    {{ i }}
+    </a>
+    </li>
+    {% endfor %}
+    </ul>
+    </div>
 </body>

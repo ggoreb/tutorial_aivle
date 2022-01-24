@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'file',
     'paging',
     'member',
     'firstapp',
@@ -153,6 +154,8 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/member/login/'
 LOGOUT_REDIRECT_URL = '/member/login/'
 
-
+MEDIA_URL = '/media/'
+# 2.2 버전
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 

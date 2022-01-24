@@ -35,4 +35,5 @@ urlpatterns = [
     path('image/', config_views.download),
 
     path('member/', include('member.urls')),
+    path('paging/', include('paging.urls')),
 ]

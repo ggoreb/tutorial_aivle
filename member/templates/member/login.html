@@ -29,5 +29,6 @@ id="password" value="{{ form.password.value | default_if_none:'' }}">
 <p>현재 상태 : Guest</p>
 {% endif %}
 
+{{ request.session.user_id }}
 
 </div>

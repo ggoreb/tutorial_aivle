@@ -1,0 +1,24 @@
+<body>
+  <form>
+    User Email : <input type="text" name="email"><br>
+    User PW : <input type="text" name="userpw"><br>
+    User Name : <input type="text" name="username"><br>
+    <button type="submit" id="submit">제출</button>
+  </form>
+
+  <script>
+    document.querySelector("#submit").addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const email = document.querySelector("[name=email]").value;
+      const userpw = document.querySelector("[name=userpw]").value;
+      const username = document.querySelector("[name=username]").value;
+
+      // 이메일 검사
+      const regEmail = /^[a-zA-Z]+@\w+[.](com|net|co[.]kr)/;
+      if(regEmail.test(email)) {
+        console.log('ok');
+      }
+    });
+  </script>
+</body>

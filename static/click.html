@@ -1,0 +1,21 @@
+<body>
+  <button type="button" id="btn1">버튼 1</button>
+  <input type="button" value="버튼 2" id="btn2">
+  <hr>
+  <a href="https://cloud.kt.com/">Kt Cloud로 이동</a>
+  <h1 onclick="alert('제목 클릭')">제목</h1>
+
+
+  <script>
+    document.querySelector("#btn1").addEventListener("click", () => {
+      alert("버튼 1 클릭!");
+    });
+    document.getElementById("btn2").addEventListener("click", () => {
+      alert("버튼 2 클릭!");
+    });
+    document.querySelector("a").addEventListener("click", (e) => {
+      e.preventDefault();
+      alert("a 태그 클릭!");
+    });
+  </script>
+</body>
